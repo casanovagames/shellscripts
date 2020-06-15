@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # This is a post setup script that install all the programs
 # that i like to use simply and fast.
 
