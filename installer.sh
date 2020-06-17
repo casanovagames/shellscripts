@@ -40,6 +40,8 @@ wget -c https://az764295.vo.msecnd.net/stable/a5d1cc28bb5da32ec67e86cc50f84c67cc
 
 wget -c https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb
 
+wget -c https://github.com/balena-io/etcher/releases/download/v1.5.99/balena-etcher-electron_1.5.99_amd64.deb
+
 # Install flatpaks
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.github.libresprite.LibreSprite com.orama_interactive.Pixelorama org.ppsspp.PPSSPP -y
