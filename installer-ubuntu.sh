@@ -49,7 +49,7 @@ sudo dpkg -i code_1.46.0-1591780013_amd64.deb
 sudo dpkg -i discord-0.0.10.deb
 sudo dpkg -i balena-etcher-electron_1.5.99_amd64.deb
 
-sudo apt-get install -f
+sudo apt install -f
 
 
 # Who doesn't like some good theming...
