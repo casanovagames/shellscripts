@@ -11,7 +11,7 @@ sudo apt upgrade -y
 
 
 # Install from repos
-sudo apt install tiled gimp krita audacity simplescreenrecorder lmms git flatpak gnome-software dosbox quadrapassel gnome-boxes plank playonlinux flameshot apt-transport-https curl gnome-software-plugin-flatpak neofetch steam ttf-mscorefonts-installer gnome-characters gnome-software-plugin-snap -y
+sudo apt install tiled gimp krita audacity simplescreenrecorder lmms git flatpak gnome-software dosbox quadrapassel gnome-boxes plank playonlinux flameshot apt-transport-https curl gnome-software-plugin-flatpak neofetch steam ttf-mscorefonts-installer gnome-characters gnome-software-plugin-snap synaptic qt5-style-plugins default-jdk -y
 
 
 # Install brave browser
@@ -25,14 +25,14 @@ sudo apt install brave-browser -y
 
 # Install github desktop
 wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key add -
-sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
 
 sudo apt-get update -y
 sudo apt install github-desktop -y
 
 
 # Install Lutris
-sudo add-apt-repository ppa:lutris-team/lutris
+sudo add-apt-repository ppa:lutris-team/lutris -y
 sudo apt update -y
 sudo apt install lutris -y
 
@@ -49,21 +49,26 @@ sudo dpkg -i code_1.46.0-1591780013_amd64.deb
 sudo dpkg -i discord-0.0.10.deb
 sudo dpkg -i balena-etcher-electron_1.5.99_amd64.deb
 
-sudo apt install -f
+sudo apt install -f -y
 
 
 # Who doesn't like some good theming...
-sudo add-apt-repository -u ppa:snwh/ppa
-sudo add-apt-repository ppa:papirus/papirus
-sudo add-apt-repository ppa:numix/ppa
+wget -c https://launchpadlibrarian.net/468844787/paper-icon-theme_1.5.728-202003121505~daily~ubuntu18.04.1_all.deb
+sudo add-apt-repository ppa:papirus/papirus -y
+sudo add-apt-repository ppa:numix/ppa -y
 
 sudo apt update -y
 
-sudo apt install paper-icon-theme
-sudo apt install moka-icon-theme faba-icon-theme faba-mono-icons
-sudo apt install papirus-icon-theme
-sudo apt install arc-theme
-sudo apt install numix-icon-theme-circle
+sudo apt install papirus-icon-theme -y
+sudo apt install arc-theme -y
+sudo apt install numix-icon-theme-circle -y
+sudo apt install moka-icon-theme -y
+
+
+# Install LOVE2D
+sudo add-apt-repository ppa:bartbes/love-stable
+sudo apt-get update
+sudo apt install love
 
 
 # Install flatpaks
